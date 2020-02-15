@@ -31,15 +31,13 @@ function App() {
 
   return (
     <div className="App">
-      <div className="box-container">
-        {appState.objects.map((element, index) => (
-          <div
-            key={index}
-            className={toggleActiveStyles(index)}
-            onClick={() => toggleActive(index)}
-          ></div>
-        ))}
-      </div>
+      {appState.objects.map((element, index) => (
+        <div
+          key={index}
+          className={toggleActiveStyles(index)}
+          onClick={() => toggleActive(index)}
+        ></div>
+      ))}
     </div>
   );
 }
